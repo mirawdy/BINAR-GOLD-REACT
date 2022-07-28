@@ -5,8 +5,10 @@
 }
 
 .banner-img{
+    display: flex;
+    justify-content: flex-end;
     box-sizing: border-box;
-    margin-top: 53px;
+    padding-top: 53px;
     max-width: 50%;
 }
 .banner-img >img{

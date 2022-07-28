@@ -1,0 +1,72 @@
+p {
+    text-align: justify;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+.section-satu{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 550px;
+    padding: 0px;
+}
+
+.section-satu-img{
+    box-sizing: border-box;
+    padding-top: 84px;
+    padding-left: 10%;
+    width: 50%;
+    height: 428px;
+}
+
+.section-satu-txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 116px;
+    padding-right: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.section-satu-txt > h2{
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.section-satu-txt > p, li{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checklist{
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    background-color: #CFD4ED;
+    margin-right: 10px;
+    line-height: 30px;
+    color:#0D28A6;
+
+}
+
+.section-satu-txt-points{
+    padding-left: 0%;
+    line-height: 20px;
+}
+
+.section-satu-txt-points > span{
+    padding: 20px;
+}
