@@ -2,7 +2,7 @@ p {
     text-align: justify;
 }
 
-li {
+.section-satu-txt-points > li {
     list-style-type: none;
 }
 
