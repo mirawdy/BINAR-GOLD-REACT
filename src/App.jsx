@@ -1,9 +1,20 @@
-//import { useState } from 'react'
-import Home from './pages/home'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/home.jsx'
+import CarDetail from './pages/CarDetail.jsx'
+import CarList from './pages/CarList.jsx'
+import CarSearch from './pages/CarSearch.jsx'
+
 
 function App() {return(
-  <Home/>
+  <BrowserRouter>
+  <Routes>
+    <Route element={<Home/>} path="/"/>
+    <Route element={<CarDetail/>} path="/cars/:id"/>
+    <Route element={<CarList/>} path="/cars"/>
+    <Route element={<CarSearch/>} path="/cars/search"/>
+  </Routes>
+  </BrowserRouter>
 )
 }
 
-export default App
+export default App;

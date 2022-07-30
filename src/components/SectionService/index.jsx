@@ -11,7 +11,7 @@ function Service(){
         <div className="section-satu-txt">
             <h2>Best Car Rental for any kind of trip in (Lokasimu)!</h2>
             <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
-            <ul class="section-satu-txt-points">
+            <ul className="section-satu-txt-points">
                 <li><span className="checklist">&#x2714;</span> <span>    Sewa Mobil Dengan Supir di Bali 12 Jam</span></li>
                 <li><span className="checklist">&#x2714;</span> <span>   Sewa Mobil Lepas Kunci di Bali 24 Jam</span></li>
                 <li><span className="checklist">&#x2714;</span> <span>   Sewa Mobil Jangka Panjang Bulanan</span></li>
