@@ -4,6 +4,7 @@
 .section-tiga{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 .section-tiga-title{
@@ -21,51 +22,69 @@ h2{
     line-height: 36px;
 }
 
-.card-right > p{
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-    width: 150px;
-}
-
-.section-tiga-card{
+.section-tiga-cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
-/*    flex-wrap: nowrap;
+    gap: 2%;
+    flex-wrap: nowrap;
     overflow: hidden;
-    scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 .cardz{
-/*    width:619px;*/
-    width: 25%;
-    height: 150px;
+    width: 35%;
+    max-height: 17rem;
     display: flex;
     padding-right: 0px;
     flex-direction: row;
     border-width: 0px;
     background-color: #F1F3FF;
     border-radius: 5%;
-/*    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);*/
+    gap: 5%;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.cards-left{
+    width: 30%;
+    padding: 20% 10%;
+}
+
+.cards-left > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.cards-right{
+    padding: 10% 5%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0%;
+}
+
+.cards-right > p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 3%;
 }
 
 .testiName{
+    padding-top: 0%;
+    margin-top: 0%;
     font-weight: 400;
+    font-size: 14px;
 }
 
-.card-left > img{
-    width: 80px;
-    height: 80px;
-}
-
-.card-left{
-    width: 100px;
-    padding-right: 10px;
-}
-
-.card-right{
-    width: 170px;
+.section-tiga-button{
+    padding-top: 20px;
     display: flex;
-    flex-direction: column;
+    gap: 5%;
+    flex-direction: row;
+    justify-content: center;
 }

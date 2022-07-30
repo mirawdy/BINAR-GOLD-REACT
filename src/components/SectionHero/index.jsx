@@ -9,7 +9,7 @@ function Hero(){
         <div className="banner-text">
             <h1>Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</h1>
             <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-            <Button/>
+            <Button text="Mulai Cari Mobil"/>
         </div>
         <div className="banner-img">
             <img src={HeroCar} alt="An image of black car"/>

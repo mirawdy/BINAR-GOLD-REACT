@@ -1,0 +1,68 @@
+footer{
+    margin-top: 5%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10%;
+}
+
+.footer-alamat > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-copyright > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-socmed > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-nav > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-alamat{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer-socmed{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.logoSocmed{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

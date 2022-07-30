@@ -1,0 +1,36 @@
+.section-empat{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.containerLoc {
+    background-color: #0D28A6;
+    width: 69rem;
+    height: 20.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2%;
+    padding-top: 4rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.containerLoc > h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerLoc > p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

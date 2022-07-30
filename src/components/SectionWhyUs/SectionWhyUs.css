@@ -33,7 +33,7 @@
 .cards > p{
     font-size: 14px;
     line-height: 15px;
-    width: 220px;
+    width: 200px;
     height: 60px;
     padding-bottom: 0%;
 }
@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 25%;
-    height: 230px;
+    height: 220px;
     padding: 30px 30px;
     border-width: 2px;
     border-color: rgb(196, 193, 193);
