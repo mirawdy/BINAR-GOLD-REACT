@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Button from '../components/Button'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import CarExplanation from "../components/SectionCarExplanation";
@@ -21,10 +20,12 @@ function CarDetail(){
 
     useEffect (() => {getCarData()}, []);
 
+    const carPrice = new Intl.NumberFormat('en-id', { style: 'currency', currency: 'IDR' }).format(car.price)
+
     return(
         <>
         <Nav/>
-        <CarExplanation carImage={car.image} carName={car.name} carCategory={car.category} carPrice={car.price}/>
+        <CarExplanation carImage={car.image} carName={car.name} carCategory={car.category} carPrice={carPrice}/>
         <Footer/>
         </>
     )

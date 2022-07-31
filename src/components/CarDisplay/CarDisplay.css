@@ -1,0 +1,158 @@
+.section-carDisplay{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;    
+}
+
+.cards-container > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carCard{
+    width: 20rem;
+    height: auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container{
+    padding: 0rem 1.5rem;
+}
+
+.text-container > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.carLorem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.carPrice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.image-container{
+    width: 90%;
+    height: 12rem;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0%;
+}
+
+.image-container > img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.section-carDisplay > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.button-pilih-mobil{
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carCard{
+        width: 25vw;
+        height: auto;
+    }
+    .carLorem{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .carPrice {
+        font-size: 14px;
+        line-height: 24px;
+    }    
+}
+
+@media only screen and (max-width: 576px) {
+    .section-carDisplay{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        padding-left: 0%;
+    }
+
+    .section-carDisplay > h1{
+        font-size: 18px;
+        line-height: 20px;
+        margin: 5% 0%;
+    }
+
+    .cards-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 0%;
+        margin: 0% 0%;
+    }
+    .cards-container > ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 4%;
+        justify-content: flex-start;
+    }
+
+    .carCard{
+        width: 45%;
+        height: auto;
+        margin-left: 1.5%;
+        margin-right: 1%;
+    }
+
+    .image-container{
+        width: 90%;
+        height: 5rem;
+    }
+    
+    .carLorem{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .carPrice {
+        font-size: 14px;
+        line-height: 16px;
+    }    
+}

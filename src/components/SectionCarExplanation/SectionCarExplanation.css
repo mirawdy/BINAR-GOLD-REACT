@@ -23,6 +23,27 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 2rem 2rem;
+    margin-bottom: 4%;
+}
+
+.persyaratan > h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.persyaratan > ul, li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24.5px;
+}
+
+.persyaratan > ul{
+    color: #8A8A8A;
 }
 
 .data-mobil{
@@ -30,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     width: 40%;
-    height: 27rem;
+    height: fit-content;
     margin-right: 5%;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
@@ -52,4 +73,82 @@
 
 .persyaratan > li{
     list-style-type: circle;
+}
+
+.car-information{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.jumlah-penumpang{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 1rem;
+}
+
+.jumlah-penumpang-icon{
+    margin: 1% 1%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.jumlah-penumpang-icon > img{
+    width: 100%;
+    height: 100%;
+}
+
+.jumlah-penumpang-txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #8A8A8A;
+}
+
+.total-harga{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-carExplanation{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;}
+
+    .persyaratan{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-shadow: none;
+    }
+    .data-mobil{
+        width:90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .additional-bg{
+        display:none;
+    }
+    .back-button{
+        margin-left: 30%;
+        margin-left: 30%;
+    }
+        
 }
