@@ -11,7 +11,7 @@ import iconTwitch from '../../assets/icon_twitch.png'
 function Footer(){
     return(
         <>
-        <footer>
+        <footer className="footer-pg">
             <div className="footer-alamat">
                 <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
                 <p>binarcarrental@gmail.com</p>
@@ -35,7 +35,7 @@ function Footer(){
             </div>
             <div className="footer-copyright">
                 <p>Copyright Binar 2022</p>
-                <div><img src={Logo}/></div>
+                <div className='logo-web'><img src={Logo}/></div>
             </div>
         </footer>
         </>
