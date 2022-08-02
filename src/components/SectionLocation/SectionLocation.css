@@ -2,13 +2,13 @@
     padding-top: 3rem;
     display: flex;
     justify-content: center;
-    
+    width: 100vw;    
 }
 
 .containerLoc {
     background-color: #0D28A6;
-    width: 69rem;
-    height: 20.5rem;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,9 +28,40 @@
 }
 
 .containerLoc > p{
+    width: 60%;
     font-weight: 700;
     font-size: 14px;
-    line-height: 10px;
+    line-height: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.button-sewa{
+    margin-bottom: 7%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-empat{
+        width: 100vw;
+        height: auto;
+    }
+
+    .containerLoc{
+        width: 90%;
+        height: auto;
+        padding: 8%;
+    }
+    .button-sewa{
+        margin-bottom: 3%;
+    }
+    .containerLoc > h2{
+        line-height: 40px;
+        text-align: center;
+    }
+    .containerLoc > p{
+        width: 80%;
+        line-height: 20px;
+        margin-bottom: 10%;
+    }
 }

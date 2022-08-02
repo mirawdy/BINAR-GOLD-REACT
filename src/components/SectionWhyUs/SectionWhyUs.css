@@ -1,4 +1,5 @@
 .section-dua{
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -32,10 +33,12 @@
 
 .cards > p{
     font-size: 14px;
-    line-height: 15px;
-    width: 200px;
-    height: 60px;
+    line-height: 20px;
+    width: 100%;
+    height: auto;
     padding-bottom: 0%;
+    margin-bottom: 3%;
+    text-align: justify;
 }
 
 .cards > h3{
@@ -50,7 +53,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 25%;
-    height: 220px;
+    height: auto;
     padding: 30px 30px;
     border-width: 2px;
     border-color: rgb(196, 193, 193);
@@ -58,3 +61,28 @@
     border-radius: 5%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .section-dua{
+        width: 100vw;
+    }
+    .section-dua-title{
+        width: 100%;
+    }
+    .section-dua-card{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .cards{
+        width: 40%;
+    }
+    .cards > p{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cards{
+        width: 90%;
+    }
+}

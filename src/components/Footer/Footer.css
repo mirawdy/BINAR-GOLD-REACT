@@ -1,12 +1,13 @@
 .footer-pg{
     margin-top: 5%;
-    width: 90%;
+    width: 100vw;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    gap: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%;
+    gap: auto;
 }
 
 .footer-alamat > p{
@@ -71,10 +72,10 @@
     .footer-pg{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         width: 100vw;
-        gap: 2%;
         margin: 0%;
+        padding: 5%;
     }
     .logo-web{
         width:100%;
@@ -86,7 +87,7 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 690px) {
     .footer-pg{
         width: 100vw;
         display: flex;

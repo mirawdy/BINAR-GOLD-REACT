@@ -29,7 +29,7 @@ function FAQ(){
                 </div>
 
                 <div className="accordion-title">
-                    <p>Berapa hari sebelumnya sabaiknya booking sewa mobil?</p>
+                    <p>Berapa hari sebelumnya sebaiknya booking sewa mobil?</p>
                     <span>&#129171;</span>
                 </div>
 
