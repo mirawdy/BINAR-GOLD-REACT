@@ -18,9 +18,9 @@
     align-content: center;
 }
 
-
 .section-lima-accordion{
     width: 65%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,7 +32,9 @@
 .accordion-title{
     margin-top: 10px;
     width: 80%;
+    height: 3rem;
     border-width: 1px;
+    border-radius: 0%;
     border-style: double;
     border-color: #D4D4D4;
     display: flex;
@@ -44,20 +46,16 @@
 }
 
 .accordion-content{
-    display:none;
     width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border-width: 1px;
     border-style: double;
     border-color: #D4D4D4;
     padding-left: 2%;
     padding-right: 2%;
-}
-
-
-.accordion-title > span{
-    font-size: 20px;
-    font-weight: 700;
-    padding-top: 10px;
 }
 
 .section-lima-FAQ > h2{
@@ -74,7 +72,8 @@
     font-weight: 700;
 }
 
-.accordion-title > p{
+.accordion-title > div{
+    padding: 0% 2%;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
@@ -82,7 +81,8 @@
 }
 
 .accordion-content > p{
-    font-size: 14px;
+    padding: 0% 2%;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-weight: 700;
