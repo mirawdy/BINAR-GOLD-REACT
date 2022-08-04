@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Nav from '../components/Nav'
+import NavBurger from '../components/NavBurger'
 import Footer from '../components/Footer'
 import CarExplanation from "../components/SectionCarExplanation";
 
@@ -25,6 +26,7 @@ function CarDetail(){
     return(
         <>
         <Nav/>
+        <NavBurger/>
         <CarExplanation carImage={car.image} carName={car.name} carCategory={car.category} carPrice={carPrice}/>
         <Footer/>
         </>

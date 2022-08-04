@@ -1,8 +1,11 @@
 import './Navbar.css'
 import Logo from '../../assets/logo.png'
 //import { HashLink as Link } from 'react-router-hash-link';
+import {useNavigate} from 'react-router-dom'
+
 
 function Navigation(){
+    let navigate = useNavigate();
     function scrollService(){
         const section = document.querySelector( '#ourservice' );
         section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
@@ -23,12 +26,15 @@ function Navigation(){
         section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
       }
 
+      function backHome(){
+        navigate(`/`)}
+
 
     return(
         <>
-        <nav>
+        <nav className="navdesktop">
         <div className="logo">
-            <img src={Logo} alt="page logo"/>
+            <img src={Logo} alt="page logo" onClick={backHome}/>
         </div>    
         <div className="mainmenu">
                 <li className="menu" onClick={scrollService}>Our Service</li>

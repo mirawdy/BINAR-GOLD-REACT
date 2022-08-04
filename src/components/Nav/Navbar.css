@@ -1,7 +1,6 @@
-nav {
+.navdesktop {
     display: flex;
     width: 100vw;
-    min-width: 100vw;
     justify-content: space-between;
     padding-bottom: 0px;
     position: sticky;
@@ -39,4 +38,10 @@ nav {
     font-size: 14px;
     font-weight: 400;
     padding: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .navdesktop{
+        display: none;
+    }
 }

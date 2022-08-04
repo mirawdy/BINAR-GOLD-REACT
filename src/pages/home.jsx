@@ -6,11 +6,13 @@ import TestiSlider from "../components/SectionTestimonials"
 import Location from "../components/SectionLocation"
 import FAQ from "../components/SectionFAQ"
 import Footer from "../components/Footer"
+import NavBurger from "../components/NavBurger"
 
 function Home(){
     return(
         <>
         <Nav/>
+        <NavBurger/>
         <Hero/>
         <Service/>
         <WhyUs/>

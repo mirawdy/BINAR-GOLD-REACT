@@ -5,10 +5,34 @@ import iconInstagram from '../../assets/icon_instagram.png'
 import iconMail from '../../assets/icon_mail.png'
 import iconTwitter from '../../assets/icon_twitter.png'
 import iconTwitch from '../../assets/icon_twitch.png'
-
+import {useNavigate} from 'react-router-dom'
 
 
 function Footer(){
+    let navigate = useNavigate()
+    function scrollService(){
+        const section = document.querySelector( '#ourservice' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      }
+
+    function scrollWhyus(){
+        const section = document.querySelector( '#whyus' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      }
+
+      function scrollTestimonial(){
+        const section = document.querySelector( '#testimonial' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      }
+
+      function scrollFaq(){
+        const section = document.querySelector( '#faq' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      }
+
+      function backHome(){
+        navigate(`/`)}
+
     return(
         <>
         <footer className="footer-pg">
@@ -18,10 +42,10 @@ function Footer(){
                 <p>081-233-334-808</p>
             </div>
             <div className="footer-nav">
-                <p>Our services</p>
-                <p>Why Us</p>
-                <p>Testimonials</p>
-                <p>FAQ</p>
+                <p onClick={scrollService}>Our services</p>
+                <p onClick={scrollWhyus}>Why Us</p>
+                <p onClick={scrollTestimonial}>Testimonials</p>
+                <p onClick={scrollFaq}>FAQ</p>
             </div>
             <div className="footer-socmed">
                 <p>Connect with us</p>
@@ -35,7 +59,7 @@ function Footer(){
             </div>
             <div className="footer-copyright">
                 <p>Copyright Binar 2022</p>
-                <div className='logo-web'><img src={Logo}/></div>
+                <div className='logo-web'><img src={Logo} onClick={backHome}/></div>
             </div>
         </footer>
         </>
