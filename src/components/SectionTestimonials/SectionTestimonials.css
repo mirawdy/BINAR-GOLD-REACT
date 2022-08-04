@@ -1,7 +1,13 @@
+html, body{
+    width: 100vw;
+    scrollbar-width: thin;
+}
+
 *{
     box-sizing: border-box;
 }
 .section-tiga{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -17,37 +23,48 @@
     font-weight: 700;
 }
 
-h2{
+.section-tiga-title > h2{
     font-size: 24px;
     line-height: 36px;
 }
 
 .section-tiga-cards{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section-tiga-cardscontainer{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2%;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    width: 100%;
+    height: fit-content;
+    gap: auto;
 }
 
 .cardz{
-    width: 35%;
-    max-height: 17rem;
+    width: 100%;
+    height: fit-content;
     display: flex;
-    padding-right: 0px;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     flex-direction: row;
     border-width: 0px;
     background-color: #F1F3FF;
     border-radius: 5%;
-    gap: 5%;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .cards-left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10%;
     width: 30%;
-    padding: 20% 10%;
+    height: auto;
 }
 
 .cards-left > img{
@@ -57,8 +74,9 @@ h2{
 }
 
 .cards-right{
-    padding: 10% 5%;
+    padding: 5% 5%;
     width: 70%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,7 +89,7 @@ h2{
     font-weight: 700;
     width: 90%;
     margin-top: 0px;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 .testiName{
@@ -82,9 +100,88 @@ h2{
 }
 
 .section-tiga-button{
-    padding-top: 20px;
+    padding-top: 0.5%;
     display: flex;
-    gap: 5%;
+    gap: 2%;
     flex-direction: row;
     justify-content: center;
+}
+
+.section-tiga-button > button{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 8px 16px;
+        background-color: #F1F3FF;
+        color: rgb(92, 92, 92);
+        border-radius: 50%;
+        border-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+}
+
+.section-tiga-button > button:hover{
+    background-color: #5CB85F;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 800px){
+    .cards-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0%;
+        margin-bottom: 5%;
+        width: 30%;
+        height: auto;
+    }
+    
+    .cards-left > img{
+        width: 80%;
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 564px){
+    .cardz{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-width: 0px;
+        background-color: #F1F3FF;
+        border-radius: 5%;
+    }
+
+    .cards-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        width: 100%;
+        height: auto;
+    }
+    .cards-left > img{
+        width: 30%;
+        height: 30%;
+    }
+
+    .cards-right{
+        padding: 5% 5%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0%;
+    }    
+
 }

@@ -7,7 +7,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: #F1F3FF;
-    ;
+    z-index: 100;
 }
 
 .mainmenu > li {
