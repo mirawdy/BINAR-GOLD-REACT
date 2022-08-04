@@ -3,7 +3,7 @@ import Home from './pages/home.jsx'
 import CarDetail from './pages/CarDetail.jsx'
 import CarList from './pages/CarList.jsx'
 import CarSearch from './pages/CarSearch.jsx'
-
+import Nav from './components/Nav'
 
 function App() {return(
   <BrowserRouter>

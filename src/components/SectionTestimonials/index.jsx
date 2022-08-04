@@ -16,7 +16,7 @@ function TestiSlider(){
     const nextRef = useRef(null);
     return(
         <>
-        <section className="section-tiga">
+        <section className="section-tiga" id="testimonial">
         <div className="section-tiga-title">
             <h2>Testimonial</h2>
             <p>Berbagai review positif dari para pelanggan kami</p>

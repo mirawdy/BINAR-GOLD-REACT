@@ -4,7 +4,7 @@ import imgService from '../../assets/img_service.png'
 function Service(){
     return(
         <>
-    <section className="section-satu">
+    <section className="section-satu" id="ourservice">
         <div className="section-satu-img">
         <img src={imgService} alt="image of a woman smiling"/></div>
 

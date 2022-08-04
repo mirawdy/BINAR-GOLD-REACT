@@ -7,7 +7,7 @@ import './SectionWhyUs.css';
 function WhyUs(){
     return(
         <>
-        <section className="section-dua">
+        <section className="section-dua" id="whyus">
         <div className="section-dua-title">
             <h2>
                 Why Us?
